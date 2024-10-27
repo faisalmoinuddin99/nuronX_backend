@@ -16,10 +16,7 @@ data class Users(
     @Column(nullable = false)
     val email: String,
 
-    val status: RequestStatus = RequestStatus.PENDING
 )
 
 
-enum class RequestStatus {
-    PENDING, ACCEPTED, REJECTED
-}
+
